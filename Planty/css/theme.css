@@ -1,0 +1,52 @@
+@import url('"https : //fonts.googleapis.com/css2?family= Syne:wght famille= Syne:wght@400;500;600;700;800 & display=swap"');
+/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne';
+}
+/* On applique un gris plus clair sur les paragraphes */
+p {
+   color: #313332;
+}
+/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
+.hover-effect img {
+   transition: all 0.33s ease-in-out;
+   transform: scale(1) translateY(0px);
+}
+.hover-effect img:hover {
+   transition: all 0.33s ease-in-out;
+   transform: scale(1.05) translateY(-10px);
+}
+
+/* Header */
+
+#site-header.sticky-top {
+ position: sticky;
+ z-index: 10;
+ top: 0;
+ background-color: white;
+}
+
+li.menu-item a {
+color : white !important;
+display: inline-block;
+padding: 10px 25px;
+background-color: #DC9F96;
+border-radius: 10px;
+text-align: center;
+}
+
+li.menu-item a:hover,
+li.menu-item.current-menu-item a {
+    color: white !important;
+    background-color:  #DC9F96 ;
+    text-decoration:none !important;
+}
+
+/* footer */
+
+#site-footer {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background-color: white !important;
+ }
